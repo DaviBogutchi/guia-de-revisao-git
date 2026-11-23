@@ -6,5 +6,5 @@
 4. **Commit:** registro de uma mudança no histórico. Uma mensagem como “Corrige link do menu” ajuda a entender o que mudou.
 5. **Branch:** linha de trabalho separada. Posso mexer no menu em uma branch enquanto a versão principal continua disponível.
 6. **Main:** nome comum da branch principal. É onde entram as mudanças integradas ao projeto.
-7. **Merge:** integração das mudanças de uma branch em outra. Se elas mudaram o mesmo trecho de formas diferentes, pode ser preciso resolver um conflito.
+7. **Merge:** integração das mudanças de uma branch em outra. Por exemplo, um merge leva as mudanças da branch `docs/glossario` para a `main`. Se ambas alteraram a mesma linha de formas diferentes, pode ser preciso resolver um conflito.
 8. **Pull Request:** pedido para integrar uma mudança. A equipe pode ler o diff, comentar, pedir ajustes e aprovar antes do merge.
