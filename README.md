@@ -4,7 +4,8 @@ Mini guia de revisão de Versionamento e Colaboração. Fiz a Operação Merge i
 
 ## Participante
 
-- Davi — versão individual.
+- Davi
+  .
 
 ## O que tem aqui
 
