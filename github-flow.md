@@ -3,7 +3,7 @@
 1. Crie uma branch a partir da `main` para trabalhar numa mudança.
 2. Faça as alterações e registre commits com mensagens claras.
 3. Abra um Pull Request para mostrar o que mudou e pedir revisão.
-4. Leia os comentários, converse sobre as sugestões e faça ajustes na mesma branch.
+4. Leia os comentários, converse sobre as sugestões e faça ajustes na mesma branch. Os novos commits aparecem no Pull Request já aberto.
 5. Faça o merge quando a mudança estiver pronta para entrar na `main`.
 6. Apague a branch depois que ela entrar na `main`.
 
