@@ -1,31 +1,31 @@
 # guia-de-revisao-git
 
-Mini guia de revisão de Versionamento e Colaboração. A Operação Merge usa dois arquivos de estudo e um conflito planejado para praticar o GitHub Flow.
+Mini guia de revisão de Versionamento e Colaboração. Fiz a Operação Merge individualmente, usando branches e Pull Requests para praticar o fluxo e resolver um conflito de verdade.
 
-## Integrantes
+## Participante
 
-- Aluno A: Davi
+- Davi — versão individual.
 
-## Arquivos
+## O que tem aqui
 
-- `glossario.md`: oito termos de versionamento (em revisão).
-- `github-flow.md`: seis passos do GitHub Flow (segunda parte da atividade).
-- [combinados.md](combinados.md): dia e horário de estudo.
+- [Glossário](glossario.md): oito termos de versionamento explicados com exemplos.
+- [GitHub Flow](github-flow.md): os seis passos do fluxo e como ler um diff.
+- [Combinados](combinados.md): os dias e o horário de estudo definidos após o conflito.
 
-## Respostas de revisão
+## Respostas
 
-### O diff
+### 1. O diff
 
-O vermelho com `-` indica as linhas removidas da versão anterior. O verde com `+` indica as linhas adicionadas. Se uma frase for trocada, a frase antiga aparece em vermelho e a nova em verde. O exemplo do commit deve ser registrado depois da revisão do PR.
+No [commit de ajuste do glossário](../../commit/190cb19c4defcdc7edae14b90bb17aab43aff13a), a definição anterior de merge saiu em vermelho. Em verde entrou a nova versão da definição, com o exemplo de integrar a branch `docs/glossario` à `main` e a explicação de quando pode aparecer um conflito. O sinal `-` indica uma linha removida e o `+` indica uma linha adicionada.
 
-### O conflito
+### 2. O conflito
 
-Um conflito aparece quando o Git não consegue juntar mudanças feitas de formas diferentes no mesmo trecho. `<<<<<<<` marca o começo da versão da branch atual, `=======` separa as versões e `>>>>>>>` indica o fim da versão que está sendo integrada. Depois de escolher o texto final, a gente remove os marcadores e registra a resolução. O resultado da dupla será preenchido depois da segunda rodada.
+As branches `docs/dia-a` e `docs/dia-b` saíram da mesma versão da `main`. Uma trocou a linha por terça-feira e a outra por quinta-feira. Depois que a primeira entrou na `main`, o GitHub bloqueou o merge da segunda porque as duas mudaram a mesma linha. Num arquivo com conflito, `<<<<<<<` abre a primeira versão, `=======` separa as duas e `>>>>>>>` fecha a segunda. Mantive o horário e escrevi **Dias de estudo: terça e quinta** para aproveitar as duas opções. A resolução ficou registrada no [PR #7](../../pull/7).
 
-### A revisão
+### 3. A revisão
 
-O comentário da dupla deve indicar o trecho, sugerir uma mudança e reconhecer algo que ficou bom. Primeiro o colega usa **Request changes**. Depois do novo commit, ele confere o ajuste e usa **Approve**. Os comentários reais entram aqui após a revisão.
+Fiz uma conferência individual e registrei os ajustes na mesma branch de cada PR. No glossário, as definições estavam diretas e acrescentei um exemplo para deixar merge mais fácil de entender. No GitHub Flow, os passos estavam em ordem e esclareci que os novos commits aparecem no PR já aberto. Em dupla, o colega usaria **Request changes** para pedir cada ajuste e **Approve** depois de verificar o novo commit. Nesta versão individual, as mudanças foram integradas depois da conferência, sem revisão de colega.
 
-### Segurança
+### 4. Segurança
 
-Apagar um telefone no commit seguinte deixa o número nas versões anteriores. Em um repositório público, ainda dá para encontrá-lo no histórico ou em cópias do repositório. Senhas e documentos pessoais, como CPF, também devem ficar fora do GitHub.
+Se alguém publicar um telefone e apagar no commit seguinte, o número ainda pode aparecer no commit anterior ou em cópias do repositório. Por isso, é importante conferir o arquivo e o diff antes de publicar. Senhas e números de documentos, como CPF, também precisam ficar fora de repositórios públicos.
